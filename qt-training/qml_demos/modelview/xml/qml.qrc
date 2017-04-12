@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>TitleDelegate.qml</file>
+        <file>files/items.xml</file>
+    </qresource>
+</RCC>

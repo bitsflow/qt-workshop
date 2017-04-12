@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/star.png</file>
+        <file>images/rocket.png</file>
+        <file>RssModel.qml</file>
+        <file>content/script.js</file>
+    </qresource>
+</RCC>

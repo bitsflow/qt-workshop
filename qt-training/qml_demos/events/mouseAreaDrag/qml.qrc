@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/face-smile.png</file>
+    </qresource>
+</RCC>

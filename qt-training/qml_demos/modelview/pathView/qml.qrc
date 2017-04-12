@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/arrow.svg</file>
+        <file>images/book.svg</file>
+        <file>images/clear.svg</file>
+        <file>images/rocket.svg</file>
+    </qresource>
+</RCC>

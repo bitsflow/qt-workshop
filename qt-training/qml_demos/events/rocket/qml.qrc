@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/rocket_small.png</file>
+    </qresource>
+</RCC>
