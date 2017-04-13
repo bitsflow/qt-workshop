@@ -1,0 +1,57 @@
+1. copy the training materials
+    $ cp -rf /media/ubuntu/USB/Qt_Shared ~/Workspace
+
+2. install the qt5 library & docs
+    $ cd ~/Workspace
+    $ tar xvfJ Qt-5.6.2.tar.xz
+    $ tar xvfJ Qt-5.6.2-help.tar.xz
+    $ unzip qt-training.zip -d ~/Workspace/qt-training
+    $ sudo mv -f ~/Workspace/Qt-5.6.2 /usr/local
+    $ sudo mv -f ~/Workspace/Qt-5.6.2-help /usr/share/qt5/doc
+    $ vi ~/.bashrc
+/*
+in ~/.bashrc
+type shift + g, o, enter
+insert "export PATH=/usr/local/Qt-5.6.2/bin:$PATH"
+type esc, :wq, enter
+*/
+    $ source ~/.bashrc
+    $ qmake --version
+/*
+QMake version 3.0
+Using Qt version 5.6.2 in /usr/local/Qt-5.6.2/lib
+*/
+
+
+3. install dependencies & qtcreator
+    $ sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev -y
+    $ sudo apt-get install qtcreator -y
+
+/*
+if error occurs, reboot the machine.
+    E: Could not get lock /var/lib/dpkg/lock - open
+    $ shutdow -r now  
+*/
+
+// qt-training/labs/planets project build
+    $ cd ~/Workspace/qt-training/labs/planets
+    $ qmake
+    $ make
+
+/*
+if error occurs, do below.
+    $ cd /usr/lib/aarch64-linux-gnu/
+    $ sudo rm -rf libGL.so
+    $ sudo ln -s /usr/lib/aarch64-linux-gnu/tegra/libGL.so libGL.so
+*/
+    $ ./planets
+
+4. set the qtcreator kit
+    $ qtcreator
+
+menu bar -> Tools -> Options
+Build & Run -> Compilers -> Add kit
+
+
+
+
